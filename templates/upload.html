@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Загрузка картинок</title>
 </head>
 <body>
-$END$
-</body>
+    <h1>Выбери файл для загрузки</h1>
+    <ul>
+        <li><a href="/upload"> Загрузить </a></li>
+        <li><a href="/images">Посмотреть картинки</a></li>
+    </ul>
+
+    <form action="/upload/" enctype="multipart/form-data" method="post">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png, .gif">
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+    </body>
 </html>
